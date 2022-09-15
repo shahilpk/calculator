@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <form class="border border-dark mt-5" action="">
+                <input id="result" class="display m-2" size="43" type="text">
+                <table>
+                    <tr>
+                        <td>
+                            <button type="button" class=" bt m-1" onclick="lastDigit()">del</button>
+                            <button class=" bt m-1"onclick="displyNum('')">)</button>
+                            <button type="button" class=" bt m-1" onclick="displyNum('%')">%</button>
+                            <button id="ac" onclick="allClear()">AC</button>
+
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="displyNum('7')">7</button>
+                            <button type="button" onclick="displyNum('8')">8</button>
+                            <button type="button" onclick="displyNum('9')">9</button>
+                            <button type="button" class=" bt m-1" onclick="displyNum('/')">/</button>
+
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="displyNum('4')">4</button>
+                            <button type="button" onclick="displyNum('5')">5</button>
+                            <button type="button" onclick="displyNum('6')">6</button>
+                            <button type="button" class=" bt m-1" onclick="displyNum('*')">x</button>
+
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="displyNum('1')">1</button>
+                            <button type="button" onclick="displyNum('2')">2</button>
+                            <button type="button" onclick="displyNum('3')">3</button>
+                            <button type="button" class=" bt m-1" onclick="displyNum('-')">-</button>
+
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="displyNum('0')">0</button>
+                            <button type="button" onclick="displyNum('.')">.</button>
+                            <button type="button" onclick="evalExp()" id="equal">=</button>
+                            <button  type="button"  class=" bt m-1" onclick="displyNum('+')">+</button>
+
+                        </td>
+                    </tr>
+                    <br>
+                </table>
+               
+
+            </form>
+        </div>
+        <div class="col-4"></div>
+
+
+    </div>
+</body>
+<script src="calc.js"></script>
+</html>

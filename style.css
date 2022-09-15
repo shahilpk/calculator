@@ -1,0 +1,61 @@
+form{
+    height: 370px;
+    border-radius: 5px;
+    border: dark;
+    width: 370px;
+    background-color: gray;
+}
+.display{
+    height: 100px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px; 
+    margin-right: 10px;
+}
+button{
+    font-size: 20px;
+    width: 80px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+
+    
+
+
+}
+td :hover{
+    background-color: rgb(222, 223, 224);
+}
+
+
+table {
+    margin-top: -60px;
+    margin-left: 2px;
+
+    
+
+}
+#ac{
+    background-color: red;
+    margin-left: 2px;
+    transition: 0.2s;
+}
+/* #ac:hover{
+    background-color: rgb(126, 244, 126) ;
+    color: #fff;
+} */
+#equal{
+    background-color: rgb(103, 192, 248);
+    transition: 0.2s;
+}
+/* #equal:hover{
+    background-color: rgb(82, 76, 239);
+    color: #fff;
+} */
+.bt{
+    background-color: rgb(215, 213, 213);
+}
+body{
+    background-color: black;
+}
